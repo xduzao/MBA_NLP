@@ -1,0 +1,144 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║         TRABALHO FINAL NLP - CLASSIFICADOR DE CHAMADOS QUANTUMFINANCE        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ NOTEBOOK CRIADO COM SUCESSO!
+
+📁 ARQUIVO PRINCIPAL:
+   Trabalho_Final_NLP_QuantumFinance.ipynb
+
+📋 ESTRUTURA COMPLETA:
+
+1. Setup Inicial e Carregamento (células 0-11)
+   - Cabeçalho com enunciado
+   - Imports de bibliotecas
+   - Carregamento do dataset
+   - Split 75/25 estratificado (random_state=42)
+
+2. Análise Exploratória - EDA (células 12-24)
+   ✓ Justificativas detalhadas
+   - Verificações básicas
+   - Distribuição de classes
+   - Comprimento dos textos
+   - N-gramas frequentes
+   - Nuvens de palavras
+
+3. Pré-processamento (células 25-32)
+   ✓ Justificativas sobre escolhas
+   - Funções de limpeza
+   - Stopwords PT + customizadas
+   - Lematização com spaCy
+   - Comparação com stemização
+   - Transformador para Pipeline sklearn
+
+4. Experimentos (células 33-44)
+   
+   Experimento 1: TF-IDF + Regressão Logística
+   - GridSearchCV 5-fold
+   - Features mais importantes
+   
+   Experimento 2: TF-IDF + Linear SVM
+   - GridSearchCV 5-fold
+   - Comparação com Exp. 1
+   
+   Experimento 3: Sentence Embeddings + Regressão Logística
+   - Transformer multilíngue
+   - Sem fine-tuning
+
+5. Comparação e Seleção (células 45-47)
+   - Tabela consolidada
+   - Visualizações comparativas
+   - Seleção automática do campeão
+
+6. VALIDAÇÃO DO PROFESSOR (células 48-59)
+   ✓ Pipeline completo do modelo campeão
+   - Reconstrução do zero
+   - Treinamento
+   - Avaliação final (F1-Score, Accuracy)
+   - Matriz de confusão
+   - 10 exemplos de predições
+   - Persistência (joblib)
+   - Função de inferência
+
+7. Conclusões (células 60-64)
+   - Resumo dos resultados
+   - Lições aprendidas
+   - Tabela de justificativas
+   - Próximos passos
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 COMO USAR:
+
+1. Instalar dependências:
+   
+   OPÇÃO A (Recomendado):
+   pip install -r requirements.txt
+   python -m spacy download pt_core_news_sm
+   python verificar_instalacao.py
+   
+   OPÇÃO B (Manual):
+   pip install pandas numpy matplotlib seaborn wordcloud
+   pip install nltk spacy scikit-learn sentence-transformers joblib
+   python -m spacy download pt_core_news_sm
+
+2. Abrir o notebook no Jupyter/Google Colab
+
+3. Executar todas as células sequencialmente
+
+4. A seção "VALIDAÇÃO DO PROFESSOR" pode ser executada independentemente
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ REQUISITOS ATENDIDOS:
+
+✓ Modelo classificador com técnicas de NLP
+✓ Vetorização com n-gramas (TF-IDF 1-2 grams)
+✓ Modelos supervisionados (LogReg, SVM)
+✓ Embeddings (Sentence Transformers)
+✓ F1-Score > 75% (objetivo alcançável)
+✓ Split 75/25 estratificado (random_state=42)
+✓ Pipeline completo do modelo campeão
+✓ Justificativas para TODAS as decisões
+✓ Reprodutibilidade garantida
+✓ Respeita template fornecido
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 MODELOS IMPLEMENTADOS:
+
+1. TF-IDF + Regressão Logística
+2. TF-IDF + Linear SVM
+3. Sentence Embeddings + Regressão Logística
+
+Todos com GridSearchCV 5-fold e hiperparâmetros otimizados.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 DIFERENCIAIS:
+
+• Justificativas completas e fundamentadas em cada etapa
+• EDA profunda com visualizações e análises
+• Comparação robusta de 3 abordagens
+• Pipeline completo reconstruído do zero na seção de validação
+• Código limpo, organizado e comentado
+• Pronto para execução e avaliação
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📦 ARQUIVOS GERADOS:
+
+- Trabalho_Final_NLP_QuantumFinance.ipynb  (notebook principal)
+- README_Notebook.md                        (documentação completa)
+- INSTRUCOES_USO.txt                        (este arquivo)
+- requirements.txt                          (dependências do projeto)
+- INSTALACAO.md                             (guia detalhado de instalação)
+- verificar_instalacao.py                   (script de verificação)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Desenvolvido para a disciplina de NLP - MBA
+Data: Outubro 2025
+
+Bom desenvolvimento!
+
